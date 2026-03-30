@@ -55,4 +55,4 @@ Complete list of API endpoints, default candidate IDs, and test account private 
 
 ---
 
-*Built with ❤️ for secure and transparent elections.*
+*Made with ❤️ by Ahmed Mekled*

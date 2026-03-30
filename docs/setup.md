@@ -102,4 +102,6 @@ Before presenting or demoing:
 - [ ] All services are running (`npm run reset` was successful).
 - [ ] MetaMask activity is cleared.
 - [ ] MetaMask is connected to `Localhost 8545`.
-- [ ] The test account is imported (10,000 ETH visible).
+---
+
+*Made with ❤️ by Ahmed Mekled*

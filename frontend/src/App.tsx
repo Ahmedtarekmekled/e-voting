@@ -14,6 +14,9 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/voter" element={<Voter />} />
         </Routes>
+        <footer className="py-8 text-center text-slate-500 dark:text-slate-400 text-sm border-t border-slate-200/50 dark:border-slate-800/50 mt-12 mb-4">
+          Made with ❤️ by Ahmed Mekled
+        </footer>
         <ToasterWrapper />
       </div>
     </Router>

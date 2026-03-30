@@ -51,3 +51,7 @@ When running the local node, the following accounts are pre-funded with **10,000
 - **"Nonce too high"**: Your MetaMask nonces are out of sync with the local node. Clear your activity tab data.
 - **"0 ETH in MetaMask"**: Ensure you are connected to the `Localhost 8545` network and have imported the correct account.
 - **"Contract not found"**: Ensure `npm run reset` was fully completed and the terminal shows a contract address.
+
+---
+
+*Made with ❤️ by Ahmed Mekled*

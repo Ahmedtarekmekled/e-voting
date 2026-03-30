@@ -85,7 +85,7 @@ The system implements security across three distinct layers:
 | `universityIdOrEmail` | String | Unique student identifier |
 | `codeHash` | String | SHA-256 hash of the issued code |
 | `walletAddress` | String | Linked MetaMask address |
-| `whitelistedOnChain` | Boolean | True if added to the smart contract |
+| `whitelistedAt` | Date | Timestamp of whitelisting |
 
 ### Collection: `auditlogs`
 | Field | Type | Description |
@@ -93,3 +93,7 @@ The system implements security across three distinct layers:
 | `action` | String | e.g., "CREATE_VOTER", "ISSUE_CODE" |
 | `actor` | String | e.g., "admin", "voter" |
 | `details` | Object | JSON payload of the action |
+
+---
+
+*Made with ❤️ by Ahmed Mekled*

@@ -83,3 +83,7 @@ Watch the terminal where Hardhat is running; it logs every transaction as it hap
 
 ### Method 3: Dashboard
 The **Admin Dashboard** provides a visual representation of all voters and their current statuses.
+
+---
+
+*Made with ❤️ by Ahmed Mekled*
