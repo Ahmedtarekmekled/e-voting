@@ -1,0 +1,15 @@
+{
+  "name": "e-voting-system",
+  "version": "1.0.0",
+  "description": "Blockchain-based E-Voting System MVP",
+  "scripts": {
+    "reset": "pwsh -ExecutionPolicy Bypass -File ./reset-and-start.ps1",
+    "start": "pwsh -ExecutionPolicy Bypass -File ./reset-and-start.ps1",
+    "stop": "taskkill /F /IM node.exe",
+    "clean-db": "cd backend && node clear-db.js",
+    "check-votes": "cd contract && npx hardhat run scripts/check-votes.js --network localhost"
+  },
+  "keywords": ["blockchain", "voting", "ethereum", "hardhat", "react"],
+  "author": "",
+  "license": "MIT"
+}
