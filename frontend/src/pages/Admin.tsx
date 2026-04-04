@@ -1,5 +1,4 @@
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect, memo } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -22,11 +21,12 @@ import DecryptedText from "@/components/DecryptedText";
 import StarBorder from "@/components/StarBorder";
 import SplitText from "@/components/SplitText";
 
+const MemoizedThreads = memo(Threads);
+
 const API_URL = 'http://localhost:4000/api';
 
 export default function Admin() {
   const [token, setToken] = useState<string | null>(localStorage.getItem('adminToken'));
-  const [password, setPassword] = useState('');
   const [voters, setVoters] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<any[]>([]);
@@ -43,7 +43,7 @@ export default function Admin() {
     }
   }, [token]);
 
-  const login = async () => {
+  const login = async (password: string) => {
     try {
         const res = await axios.post(`${API_URL}/admin/login`, { password });
         if (res.data.ok) {
@@ -121,45 +121,21 @@ export default function Admin() {
 
   if (!token) {
     return (
-        <div className="relative flex items-center justify-center h-screen bg-[#030712] overflow-hidden font-outfit">
-             <div className="absolute inset-0 z-0 pointer-events-none opacity-30">
-                <Threads amplitude={1} distance={0.4} />
+        <div className="relative flex items-center justify-center min-h-screen bg-[#030712] overflow-hidden font-outfit">
+             <div className="fixed inset-0 z-0 pointer-events-none opacity-20">
+                <MemoizedThreads amplitude={1} distance={0.4} />
             </div>
             
-            <AnimatedContent distance={30} direction="vertical" className="relative z-10 w-full max-w-md px-6">
-                <StarBorder speed="5s" color="#7034ff" className="rounded-[40px] w-full">
-                    <SpotlightCard className="bg-[#030712]/90 border-none backdrop-blur-3xl p-12 rounded-[400px]" spotlightColor="rgba(112, 52, 255, 0.1)">
-                        <div className="text-center mb-10">
-                            <div className="w-16 h-16 bg-[#7034ff]/10 border border-[#7034ff]/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <ShieldAlert className="w-8 h-8 text-[#7034ff]" />
-                            </div>
-                            <h2 className="text-4xl font-black text-white font-honoble mb-2">Admin Terminal</h2>
-                            <ShinyText text="SECURE CONSOLE ACCESS" speed={3} className="text-[10px] tracking-[0.2em] font-black text-slate-500" />
-                        </div>
-                        <div className="space-y-6">
-                            <Input 
-                                type="password" 
-                                placeholder="CONSOLE KEY" 
-                                className="h-16 bg-black border-white/10 text-white rounded-2xl focus:ring-[#7034ff]/30 text-center font-mono tracking-widest text-lg" 
-                                value={password} 
-                                onChange={(e: any) => setPassword(e.target.value)} 
-                            />
-                            <Button className="w-full h-16 bg-white text-black hover:bg-slate-200 font-black rounded-2xl transition-all shadow-2xl active:scale-95" onClick={login}>
-                                AUTHORIZE ENTRY
-                            </Button>
-                        </div>
-                    </SpotlightCard>
-                </StarBorder>
-            </AnimatedContent>
+            <LoginTerminal onLogin={login} />
         </div>
     );
   }
 
   return (
-    <div className="relative h-screen bg-[#030712] flex flex-col font-outfit selection:bg-[#7034ff]/30 text-white overflow-hidden">
+    <div className="relative min-h-screen bg-[#030712] flex flex-col font-outfit selection:bg-[#7034ff]/30 text-white overflow-x-hidden">
         {/* Threads Background */}
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-20">
-            <Threads amplitude={1} distance={0.5} enableMouseInteraction={true} />
+        <div className="fixed inset-0 z-0 pointer-events-none opacity-10">
+            <MemoizedThreads amplitude={1} distance={0.5} enableMouseInteraction={true} />
         </div>
 
         {/* Global Terminal Header */}
@@ -180,9 +156,9 @@ export default function Admin() {
             </AnimatedContent>
         </nav>
 
-        <main className="relative z-10 w-full h-full max-w-[1700px] mx-auto px-10 pt-32 pb-10 flex flex-col items-center">
+        <main className="relative z-10 w-full flex-grow max-w-[1700px] mx-auto px-4 sm:px-10 py-32 flex flex-col items-center">
             
-            <div className="flex flex-col lg:flex-row gap-10 w-full h-full items-start overflow-hidden">
+            <div className="flex flex-col lg:flex-row gap-10 w-full items-start">
                 
                 {/* Left Section: Dashboard Summaries (30%) */}
                 <div className="lg:w-[30%] h-full flex flex-col gap-8">
@@ -192,7 +168,7 @@ export default function Admin() {
                                 text="Governance" 
                                 className="text-5xl font-black text-white tracking-tighter" 
                                 delay={30}
-                                animationStepDuration={0.3}
+                                duration={0.3}
                             />
                             <p className="text-slate-500 text-sm font-light leading-relaxed mt-2 uppercase tracking-widest">Global Consensus Registry</p>
                         </div>
@@ -220,21 +196,21 @@ export default function Admin() {
                 </div>
 
                 {/* Right Section: Registry Management (70%) */}
-                <div className="lg:w-[70%] h-full flex flex-col overflow-hidden">
-                    <AnimatedContent distance={30} delay={0.3} className="h-full flex flex-col">
-                        <SpotlightCard className="bg-[#0A1128]/20 border border-white/5 backdrop-blur-3xl p-0 h-full flex flex-col rounded-[48px] overflow-hidden" spotlightColor="rgba(112, 52, 255, 0.1)">
-                            <div className="p-10 flex flex-col md:flex-row items-center justify-between gap-10 border-b border-white/5">
-                                <div>
-                                    <h2 className="text-4xl font-black text-white font-honoble tracking-tight">Participant Registry</h2>
-                                    <div className="flex items-center gap-3 mt-2">
+                <div className="lg:w-[70%] w-full flex flex-col">
+                    <AnimatedContent distance={30} delay={0.3} className="w-full flex flex-col">
+                        <SpotlightCard className="bg-[#0A1128]/20 border border-white/5 backdrop-blur-3xl p-0 flex flex-col rounded-[32px] sm:rounded-[48px] overflow-hidden" spotlightColor="rgba(112, 52, 255, 0.1)">
+                            <div className="p-6 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-10 border-b border-white/5">
+                                <div className="text-center md:text-left">
+                                    <h2 className="text-3xl sm:text-4xl font-black text-white font-honoble tracking-tight">Participant Registry</h2>
+                                    <div className="flex items-center justify-center md:justify-start gap-3 mt-2">
                                         <Fingerprint className="w-4 h-4 text-[#7034ff]" />
                                         <ShinyText text="ENCRYPTED IDENTITY DATABASE" className="text-[10px] tracking-[0.3em] font-black text-slate-600 uppercase" />
                                     </div>
                                 </div>
                                 <Dialog open={createOpen} onOpenChange={setCreateOpen}>
                                     <DialogTrigger asChild>
-                                        <Button className="bg-[#7034ff] hover:bg-[#834fff] text-white font-black px-10 h-16 rounded-[24px] shadow-[0_20px_50px_rgba(112,52,255,0.2)] transition-all active:scale-95 text-lg">
-                                            <UserPlus className="w-6 h-6 mr-3" /> ENROLL IDENTITY
+                                        <Button className="w-full sm:w-auto bg-[#7034ff] hover:bg-[#834fff] text-white font-black px-6 sm:px-10 h-14 sm:h-16 rounded-2xl sm:rounded-[24px] shadow-lg transition-all active:scale-95 text-base sm:text-lg">
+                                            <UserPlus className="w-5 h-5 sm:w-6 sm:h-6 mr-3" /> ENROLL IDENTITY
                                         </Button>
                                     </DialogTrigger>
                                     <DialogContent className="bg-[#030712]/95 border-white/10 backdrop-blur-3xl rounded-[40px] p-12 max-w-md">
@@ -259,7 +235,8 @@ export default function Admin() {
                             </div>
                             
                             {/* Scrollable Registry Table Container */}
-                            <div className="flex-grow overflow-y-auto no-scrollbar pb-10">
+                            <div className="flex-grow overflow-x-auto no-scrollbar pb-10 px-4 sm:px-0">
+                                <div className="min-w-[800px] w-full">
                                 <Table>
                                     <TableHeader className="bg-white/[0.03] sticky top-0 z-20">
                                         <TableRow className="border-white/5 hover:bg-transparent">
@@ -320,6 +297,7 @@ export default function Admin() {
                                         )}
                                     </TableBody>
                                 </Table>
+                                </div>
                             </div>
                         </SpotlightCard>
                     </AnimatedContent>
@@ -328,7 +306,7 @@ export default function Admin() {
         </main>
 
         {/* Dynamic Footer for Admin */}
-        <div className="absolute bottom-6 left-0 w-full px-10 flex justify-between items-end opacity-20 pointer-events-none">
+        <div className="fixed bottom-6 left-0 w-full px-10 hidden lg:flex justify-between items-end opacity-20 pointer-events-none">
             <div className="flex gap-10">
                 <div>
                    <div className="text-xs font-black text-white font-honoble">MASTER_NODE_v1</div>
@@ -345,5 +323,38 @@ export default function Admin() {
             </div>
         </div>
     </div>
+  );
+}
+
+// Sub-component to isolate login input and prevent page blink
+function LoginTerminal({ onLogin }: { onLogin: (password: string) => void }) {
+  const [password, setPassword] = useState('');
+  
+  return (
+    <AnimatedContent distance={30} direction="vertical" className="relative z-10 w-full max-w-md px-6 mx-auto">
+        <StarBorder speed="5s" color="#7034ff" className="rounded-[40px] w-full">
+            <SpotlightCard className="bg-[#030712]/90 border-none backdrop-blur-3xl p-8 sm:p-12 rounded-[40px]" spotlightColor="rgba(112, 52, 255, 0.1)">
+                <div className="text-center mb-10">
+                    <div className="w-16 h-16 bg-[#7034ff]/10 border border-[#7034ff]/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <ShieldAlert className="w-8 h-8 text-[#7034ff]" />
+                    </div>
+                    <h2 className="text-3xl sm:text-4xl font-black text-white font-honoble mb-2 uppercase">Admin Terminal</h2>
+                    <ShinyText text="SECURE CONSOLE ACCESS" speed={3} className="text-[10px] tracking-[0.2em] font-black text-slate-500" />
+                </div>
+                <div className="space-y-6">
+                    <Input 
+                        type="password" 
+                        placeholder="CONSOLE KEY" 
+                        className="h-16 bg-black border-white/10 text-white rounded-2xl focus:ring-[#7034ff]/30 text-center font-mono tracking-widest text-lg" 
+                        value={password} 
+                        onChange={(e: any) => setPassword(e.target.value)} 
+                    />
+                    <Button className="w-full h-16 bg-white text-black hover:bg-slate-200 font-black rounded-2xl transition-all shadow-2xl active:scale-95" onClick={() => onLogin(password)}>
+                        AUTHORIZE ENTRY
+                    </Button>
+                </div>
+            </SpotlightCard>
+        </StarBorder>
+    </AnimatedContent>
   );
 }

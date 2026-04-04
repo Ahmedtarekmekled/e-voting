@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 async function main() {
-  const candidates = ["Ahmed", "Sam", "Charlie"];
+  const candidates = ["Ahmed", "Sam", "Charlie","Majed","Wessam"];
   const EVoting = await ethers.getContractFactory("EVoting");
   const evoting = await EVoting.deploy(candidates);
 

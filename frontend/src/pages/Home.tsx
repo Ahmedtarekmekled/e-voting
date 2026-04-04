@@ -1,5 +1,5 @@
-
 import { Link } from 'react-router-dom';
+import { useState, memo } from 'react';
 import { 
   ArrowRight, ShieldCheck, Globe, Fingerprint, 
   Activity, Box, Cpu, Lock, Zap, MousePointer2 
@@ -17,14 +17,17 @@ import StarBorder from "@/components/StarBorder";
 import TrueFocus from "@/components/TrueFocus";
 import GradientText from "@/components/GradientText";
 
+const MemoizedThreads = memo(Threads);
+const MemoizedClickSpark = memo(ClickSpark);
+
 export default function Home() {
   return (
-    <ClickSpark sparkColor='#7034ff' sparkSize={10} sparkRadius={15}>
-      <div className="relative h-screen bg-[#030712] flex flex-col font-outfit selection:bg-[#7034ff]/30 text-white selection:text-white overflow-hidden">
+    <MemoizedClickSpark sparkColor='#7034ff' sparkSize={10} sparkRadius={15}>
+      <div className="relative min-h-screen bg-[#030712] flex flex-col font-outfit selection:bg-[#7034ff]/30 text-white selection:text-white overflow-x-hidden">
         
         {/* Immersive Network Threads Background */}
-        <div className="fixed inset-0 z-0 pointer-events-none opacity-40">
-          <Threads amplitude={2} distance={0.5} enableMouseInteraction={true} />
+        <div className="fixed inset-0 z-0 pointer-events-none opacity-20 sm:opacity-40">
+          <MemoizedThreads amplitude={2} distance={0.5} enableMouseInteraction={true} />
         </div>
         
         {/* Soft Vignette Overlay */}
@@ -54,7 +57,7 @@ export default function Home() {
         <main className="relative z-10 w-full h-full flex flex-col items-center justify-center pt-24 pb-12">
             
             {/* HERO CENTER */}
-            <div className="flex flex-col items-center text-center w-full mb-16 px-10">
+            <div className="flex flex-col items-center text-center w-full mb-10 sm:mb-16 px-6 sm:px-10">
                 <AnimatedContent distance={20} duration={1} className="mb-4">
                     <TrueFocus 
                         sentence="Decentralized Democracy"
@@ -62,7 +65,7 @@ export default function Home() {
                         blurAmount={12}
                         borderColor="#7034ff"
                         glowColor="rgba(112, 52, 255, 0.4)"
-                        className="text-6xl md:text-[9rem] font-black text-white tracking-tighter font-honoble leading-[0.8]"
+                        className="text-4xl sm:text-6xl md:text-[8rem] font-black text-white tracking-tighter font-honoble leading-[0.8] uppercase"
                     />
                 </AnimatedContent>
                 
@@ -125,7 +128,7 @@ export default function Home() {
         </main>
 
         {/* MINIMAL CORNER FOOTER */}
-        <footer className="absolute bottom-10 left-0 w-full px-12 flex justify-between items-end opacity-20 pointer-events-none">
+        <footer className="fixed bottom-10 left-0 w-full px-12 hidden lg:flex justify-between items-end opacity-20 pointer-events-none">
             <div className="flex gap-12">
                 <div className="flex items-center gap-3">
                     <MousePointer2 className="w-3 h-3 text-[#7034ff]" />
@@ -136,7 +139,7 @@ export default function Home() {
                     <span className="text-[7px] font-black uppercase tracking-[0.3em] text-white">Energy Consumption: Min</span>
                 </div>
             </div>
-            <div className="text-[8px] font-black tracking-[0.4em] text-slate-500 uppercase">Ahmed Mekled — Decentralized Core 2026</div>
+            <div className="text-[8px] font-black tracking-[0.4em] text-slate-500 uppercase">© {new Date().getFullYear()} Ahmed Mekled — Decentralized Core</div>
         </footer>
 
       </div>

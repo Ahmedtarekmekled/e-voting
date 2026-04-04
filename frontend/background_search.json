@@ -1,0 +1,10 @@
+
+Something went wrong. Please check the error below for more details.
+If the problem persists, please open an issue on GitHub.
+
+Message:
+Invalid registry namespace: "background". Registry names must start with @ (e.g., @shadcn, @v0).
+
+Suggestion:
+Use a valid registry name starting with @ or provide a direct URL to the registry.
+

@@ -1,0 +1,710 @@
+{
+  "pagination": {
+    "total": 512,
+    "offset": 0,
+    "limit": 100,
+    "hasMore": true
+  },
+  "items": [
+    {
+      "name": "AnimatedContent-JS-CSS",
+      "type": "registry:component",
+      "description": "Wrapper that animates any children on scroll or mount with configurable direction, distance, duration, easing and disappear options.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/AnimatedContent-JS-CSS"
+    },
+    {
+      "name": "AnimatedContent-JS-TW",
+      "type": "registry:component",
+      "description": "Wrapper that animates any children on scroll or mount with configurable direction, distance, duration, easing and disappear options.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/AnimatedContent-JS-TW"
+    },
+    {
+      "name": "AnimatedContent-TS-CSS",
+      "type": "registry:component",
+      "description": "Wrapper that animates any children on scroll or mount with configurable direction, distance, duration, easing and disappear options.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/AnimatedContent-TS-CSS"
+    },
+    {
+      "name": "AnimatedContent-TS-TW",
+      "type": "registry:component",
+      "description": "Wrapper that animates any children on scroll or mount with configurable direction, distance, duration, easing and disappear options.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/AnimatedContent-TS-TW"
+    },
+    {
+      "name": "BlobCursor-JS-CSS",
+      "type": "registry:component",
+      "description": "Organic blob cursor that smoothly follows the pointer with inertia and elastic morphing.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/BlobCursor-JS-CSS"
+    },
+    {
+      "name": "BlobCursor-JS-TW",
+      "type": "registry:component",
+      "description": "Organic blob cursor that smoothly follows the pointer with inertia and elastic morphing.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/BlobCursor-JS-TW"
+    },
+    {
+      "name": "BlobCursor-TS-CSS",
+      "type": "registry:component",
+      "description": "Organic blob cursor that smoothly follows the pointer with inertia and elastic morphing.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/BlobCursor-TS-CSS"
+    },
+    {
+      "name": "BlobCursor-TS-TW",
+      "type": "registry:component",
+      "description": "Organic blob cursor that smoothly follows the pointer with inertia and elastic morphing.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/BlobCursor-TS-TW"
+    },
+    {
+      "name": "ClickSpark-JS-CSS",
+      "type": "registry:component",
+      "description": "Creates particle spark bursts at click position.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ClickSpark-JS-CSS"
+    },
+    {
+      "name": "ClickSpark-JS-TW",
+      "type": "registry:component",
+      "description": "Creates particle spark bursts at click position.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ClickSpark-JS-TW"
+    },
+    {
+      "name": "ClickSpark-TS-CSS",
+      "type": "registry:component",
+      "description": "Creates particle spark bursts at click position.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ClickSpark-TS-CSS"
+    },
+    {
+      "name": "ClickSpark-TS-TW",
+      "type": "registry:component",
+      "description": "Creates particle spark bursts at click position.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ClickSpark-TS-TW"
+    },
+    {
+      "name": "Crosshair-JS-CSS",
+      "type": "registry:component",
+      "description": "Custom crosshair cursor with tracking, and link hover effects.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Crosshair-JS-CSS"
+    },
+    {
+      "name": "Crosshair-JS-TW",
+      "type": "registry:component",
+      "description": "Custom crosshair cursor with tracking, and link hover effects.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Crosshair-JS-TW"
+    },
+    {
+      "name": "Crosshair-TS-CSS",
+      "type": "registry:component",
+      "description": "Custom crosshair cursor with tracking, and link hover effects.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Crosshair-TS-CSS"
+    },
+    {
+      "name": "Crosshair-TS-TW",
+      "type": "registry:component",
+      "description": "Custom crosshair cursor with tracking, and link hover effects.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Crosshair-TS-TW"
+    },
+    {
+      "name": "Cubes-JS-CSS",
+      "type": "registry:component",
+      "description": "3D rotating cube cluster. Supports auto-rotation or hover interaction.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Cubes-JS-CSS"
+    },
+    {
+      "name": "Cubes-JS-TW",
+      "type": "registry:component",
+      "description": "3D rotating cube cluster. Supports auto-rotation or hover interaction.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Cubes-JS-TW"
+    },
+    {
+      "name": "Cubes-TS-CSS",
+      "type": "registry:component",
+      "description": "3D rotating cube cluster. Supports auto-rotation or hover interaction.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Cubes-TS-CSS"
+    },
+    {
+      "name": "Cubes-TS-TW",
+      "type": "registry:component",
+      "description": "3D rotating cube cluster. Supports auto-rotation or hover interaction.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Cubes-TS-TW"
+    },
+    {
+      "name": "ElectricBorder-JS-CSS",
+      "type": "registry:component",
+      "description": "Jittery electric energy border with animated arcs, glow and adjustable intensity.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ElectricBorder-JS-CSS"
+    },
+    {
+      "name": "ElectricBorder-JS-TW",
+      "type": "registry:component",
+      "description": "Jittery electric energy border with animated arcs, glow and adjustable intensity.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ElectricBorder-JS-TW"
+    },
+    {
+      "name": "ElectricBorder-TS-CSS",
+      "type": "registry:component",
+      "description": "Jittery electric energy border with animated arcs, glow and adjustable intensity.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ElectricBorder-TS-CSS"
+    },
+    {
+      "name": "ElectricBorder-TS-TW",
+      "type": "registry:component",
+      "description": "Jittery electric energy border with animated arcs, glow and adjustable intensity.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ElectricBorder-TS-TW"
+    },
+    {
+      "name": "FadeContent-JS-CSS",
+      "type": "registry:component",
+      "description": "Simple directional fade / slide entrance / exit wrapper with threshold-based activation.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/FadeContent-JS-CSS"
+    },
+    {
+      "name": "FadeContent-JS-TW",
+      "type": "registry:component",
+      "description": "Simple directional fade / slide entrance / exit wrapper with threshold-based activation.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/FadeContent-JS-TW"
+    },
+    {
+      "name": "FadeContent-TS-CSS",
+      "type": "registry:component",
+      "description": "Simple directional fade / slide entrance / exit wrapper with threshold-based activation.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/FadeContent-TS-CSS"
+    },
+    {
+      "name": "FadeContent-TS-TW",
+      "type": "registry:component",
+      "description": "Simple directional fade / slide entrance / exit wrapper with threshold-based activation.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/FadeContent-TS-TW"
+    },
+    {
+      "name": "GlareHover-JS-CSS",
+      "type": "registry:component",
+      "description": "Adds a realistic moving glare highlight on hover over any element.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GlareHover-JS-CSS"
+    },
+    {
+      "name": "GlareHover-JS-TW",
+      "type": "registry:component",
+      "description": "Adds a realistic moving glare highlight on hover over any element.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GlareHover-JS-TW"
+    },
+    {
+      "name": "GlareHover-TS-CSS",
+      "type": "registry:component",
+      "description": "Adds a realistic moving glare highlight on hover over any element.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GlareHover-TS-CSS"
+    },
+    {
+      "name": "GlareHover-TS-TW",
+      "type": "registry:component",
+      "description": "Adds a realistic moving glare highlight on hover over any element.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GlareHover-TS-TW"
+    },
+    {
+      "name": "GradualBlur-JS-CSS",
+      "type": "registry:component",
+      "description": "Progressively un-blurs content based on scroll or trigger creating a cinematic reveal.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GradualBlur-JS-CSS"
+    },
+    {
+      "name": "GradualBlur-JS-TW",
+      "type": "registry:component",
+      "description": "Progressively un-blurs content based on scroll or trigger creating a cinematic reveal.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GradualBlur-JS-TW"
+    },
+    {
+      "name": "GradualBlur-TS-CSS",
+      "type": "registry:component",
+      "description": "Progressively un-blurs content based on scroll or trigger creating a cinematic reveal.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GradualBlur-TS-CSS"
+    },
+    {
+      "name": "GradualBlur-TS-TW",
+      "type": "registry:component",
+      "description": "Progressively un-blurs content based on scroll or trigger creating a cinematic reveal.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GradualBlur-TS-TW"
+    },
+    {
+      "name": "GhostCursor-JS-CSS",
+      "type": "registry:component",
+      "description": "Semi-transparent ghost cursor that smoothly follows the real cursor with a trailing effect.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GhostCursor-JS-CSS"
+    },
+    {
+      "name": "GhostCursor-JS-TW",
+      "type": "registry:component",
+      "description": "Semi-transparent ghost cursor that smoothly follows the real cursor with a trailing effect.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GhostCursor-JS-TW"
+    },
+    {
+      "name": "GhostCursor-TS-CSS",
+      "type": "registry:component",
+      "description": "Semi-transparent ghost cursor that smoothly follows the real cursor with a trailing effect.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GhostCursor-TS-CSS"
+    },
+    {
+      "name": "GhostCursor-TS-TW",
+      "type": "registry:component",
+      "description": "Semi-transparent ghost cursor that smoothly follows the real cursor with a trailing effect.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/GhostCursor-TS-TW"
+    },
+    {
+      "name": "ImageTrail-JS-CSS",
+      "type": "registry:component",
+      "description": "Cursor-based image trail with several built-in variants.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ImageTrail-JS-CSS"
+    },
+    {
+      "name": "ImageTrail-JS-TW",
+      "type": "registry:component",
+      "description": "Cursor-based image trail with several built-in variants.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ImageTrail-JS-TW"
+    },
+    {
+      "name": "ImageTrail-TS-CSS",
+      "type": "registry:component",
+      "description": "Cursor-based image trail with several built-in variants.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ImageTrail-TS-CSS"
+    },
+    {
+      "name": "ImageTrail-TS-TW",
+      "type": "registry:component",
+      "description": "Cursor-based image trail with several built-in variants.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ImageTrail-TS-TW"
+    },
+    {
+      "name": "LogoLoop-JS-CSS",
+      "type": "registry:component",
+      "description": "Continuously looping marquee of brand or tech logos with seamless repeat and hover pause.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/LogoLoop-JS-CSS"
+    },
+    {
+      "name": "LogoLoop-JS-TW",
+      "type": "registry:component",
+      "description": "Continuously looping marquee of brand or tech logos with seamless repeat and hover pause.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/LogoLoop-JS-TW"
+    },
+    {
+      "name": "LogoLoop-TS-CSS",
+      "type": "registry:component",
+      "description": "Continuously looping marquee of brand or tech logos with seamless repeat and hover pause.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/LogoLoop-TS-CSS"
+    },
+    {
+      "name": "LogoLoop-TS-TW",
+      "type": "registry:component",
+      "description": "Continuously looping marquee of brand or tech logos with seamless repeat and hover pause.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/LogoLoop-TS-TW"
+    },
+    {
+      "name": "Magnet-JS-CSS",
+      "type": "registry:component",
+      "description": "Elements magnetically ease toward the cursor then settle back with spring physics.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Magnet-JS-CSS"
+    },
+    {
+      "name": "Magnet-JS-TW",
+      "type": "registry:component",
+      "description": "Elements magnetically ease toward the cursor then settle back with spring physics.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Magnet-JS-TW"
+    },
+    {
+      "name": "Magnet-TS-CSS",
+      "type": "registry:component",
+      "description": "Elements magnetically ease toward the cursor then settle back with spring physics.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Magnet-TS-CSS"
+    },
+    {
+      "name": "Magnet-TS-TW",
+      "type": "registry:component",
+      "description": "Elements magnetically ease toward the cursor then settle back with spring physics.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Magnet-TS-TW"
+    },
+    {
+      "name": "MagnetLines-JS-CSS",
+      "type": "registry:component",
+      "description": "Animated field lines bend toward the cursor.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MagnetLines-JS-CSS"
+    },
+    {
+      "name": "MagnetLines-JS-TW",
+      "type": "registry:component",
+      "description": "Animated field lines bend toward the cursor.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MagnetLines-JS-TW"
+    },
+    {
+      "name": "MagnetLines-TS-CSS",
+      "type": "registry:component",
+      "description": "Animated field lines bend toward the cursor.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MagnetLines-TS-CSS"
+    },
+    {
+      "name": "MagnetLines-TS-TW",
+      "type": "registry:component",
+      "description": "Animated field lines bend toward the cursor.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MagnetLines-TS-TW"
+    },
+    {
+      "name": "MetaBalls-JS-CSS",
+      "type": "registry:component",
+      "description": "Liquid metaball blobs that merge and separate with smooth implicit surface animation.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MetaBalls-JS-CSS"
+    },
+    {
+      "name": "MetaBalls-JS-TW",
+      "type": "registry:component",
+      "description": "Liquid metaball blobs that merge and separate with smooth implicit surface animation.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MetaBalls-JS-TW"
+    },
+    {
+      "name": "MetaBalls-TS-CSS",
+      "type": "registry:component",
+      "description": "Liquid metaball blobs that merge and separate with smooth implicit surface animation.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MetaBalls-TS-CSS"
+    },
+    {
+      "name": "MetaBalls-TS-TW",
+      "type": "registry:component",
+      "description": "Liquid metaball blobs that merge and separate with smooth implicit surface animation.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MetaBalls-TS-TW"
+    },
+    {
+      "name": "MetallicPaint-JS-CSS",
+      "type": "registry:component",
+      "description": "Liquid metallic paint shader which can be applied to SVG elements.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MetallicPaint-JS-CSS"
+    },
+    {
+      "name": "MetallicPaint-JS-TW",
+      "type": "registry:component",
+      "description": "Liquid metallic paint shader which can be applied to SVG elements.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MetallicPaint-JS-TW"
+    },
+    {
+      "name": "MetallicPaint-TS-CSS",
+      "type": "registry:component",
+      "description": "Liquid metallic paint shader which can be applied to SVG elements.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MetallicPaint-TS-CSS"
+    },
+    {
+      "name": "MetallicPaint-TS-TW",
+      "type": "registry:component",
+      "description": "Liquid metallic paint shader which can be applied to SVG elements.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/MetallicPaint-TS-TW"
+    },
+    {
+      "name": "Noise-JS-CSS",
+      "type": "registry:component",
+      "description": "Animated film grain / noise overlay adding subtle texture and motion.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Noise-JS-CSS"
+    },
+    {
+      "name": "Noise-JS-TW",
+      "type": "registry:component",
+      "description": "Animated film grain / noise overlay adding subtle texture and motion.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Noise-JS-TW"
+    },
+    {
+      "name": "Noise-TS-CSS",
+      "type": "registry:component",
+      "description": "Animated film grain / noise overlay adding subtle texture and motion.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Noise-TS-CSS"
+    },
+    {
+      "name": "Noise-TS-TW",
+      "type": "registry:component",
+      "description": "Animated film grain / noise overlay adding subtle texture and motion.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Noise-TS-TW"
+    },
+    {
+      "name": "PixelTrail-JS-CSS",
+      "type": "registry:component",
+      "description": "Pixelated cursor trail emitting fading squares with retro digital feel.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/PixelTrail-JS-CSS"
+    },
+    {
+      "name": "PixelTrail-JS-TW",
+      "type": "registry:component",
+      "description": "Pixelated cursor trail emitting fading squares with retro digital feel.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/PixelTrail-JS-TW"
+    },
+    {
+      "name": "PixelTrail-TS-CSS",
+      "type": "registry:component",
+      "description": "Pixelated cursor trail emitting fading squares with retro digital feel.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/PixelTrail-TS-CSS"
+    },
+    {
+      "name": "PixelTrail-TS-TW",
+      "type": "registry:component",
+      "description": "Pixelated cursor trail emitting fading squares with retro digital feel.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/PixelTrail-TS-TW"
+    },
+    {
+      "name": "PixelTransition-JS-CSS",
+      "type": "registry:component",
+      "description": "Pixel dissolve transition for content reveal on hover.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/PixelTransition-JS-CSS"
+    },
+    {
+      "name": "PixelTransition-JS-TW",
+      "type": "registry:component",
+      "description": "Pixel dissolve transition for content reveal on hover.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/PixelTransition-JS-TW"
+    },
+    {
+      "name": "PixelTransition-TS-CSS",
+      "type": "registry:component",
+      "description": "Pixel dissolve transition for content reveal on hover.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/PixelTransition-TS-CSS"
+    },
+    {
+      "name": "PixelTransition-TS-TW",
+      "type": "registry:component",
+      "description": "Pixel dissolve transition for content reveal on hover.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/PixelTransition-TS-TW"
+    },
+    {
+      "name": "Ribbons-JS-CSS",
+      "type": "registry:component",
+      "description": "Flowing responsive ribbons/cursor trail driven by physics and pointer motion.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Ribbons-JS-CSS"
+    },
+    {
+      "name": "Ribbons-JS-TW",
+      "type": "registry:component",
+      "description": "Flowing responsive ribbons/cursor trail driven by physics and pointer motion.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Ribbons-JS-TW"
+    },
+    {
+      "name": "Ribbons-TS-CSS",
+      "type": "registry:component",
+      "description": "Flowing responsive ribbons/cursor trail driven by physics and pointer motion.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Ribbons-TS-CSS"
+    },
+    {
+      "name": "Ribbons-TS-TW",
+      "type": "registry:component",
+      "description": "Flowing responsive ribbons/cursor trail driven by physics and pointer motion.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/Ribbons-TS-TW"
+    },
+    {
+      "name": "ShapeBlur-JS-CSS",
+      "type": "registry:component",
+      "description": "Morphing blurred geometric shape. The effect occurs on hover.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ShapeBlur-JS-CSS"
+    },
+    {
+      "name": "ShapeBlur-JS-TW",
+      "type": "registry:component",
+      "description": "Morphing blurred geometric shape. The effect occurs on hover.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ShapeBlur-JS-TW"
+    },
+    {
+      "name": "ShapeBlur-TS-CSS",
+      "type": "registry:component",
+      "description": "Morphing blurred geometric shape. The effect occurs on hover.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ShapeBlur-TS-CSS"
+    },
+    {
+      "name": "ShapeBlur-TS-TW",
+      "type": "registry:component",
+      "description": "Morphing blurred geometric shape. The effect occurs on hover.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/ShapeBlur-TS-TW"
+    },
+    {
+      "name": "SplashCursor-JS-CSS",
+      "type": "registry:component",
+      "description": "Liquid splash burst at cursor with curling ripples and waves.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/SplashCursor-JS-CSS"
+    },
+    {
+      "name": "SplashCursor-JS-TW",
+      "type": "registry:component",
+      "description": "Liquid splash burst at cursor with curling ripples and waves.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/SplashCursor-JS-TW"
+    },
+    {
+      "name": "SplashCursor-TS-CSS",
+      "type": "registry:component",
+      "description": "Liquid splash burst at cursor with curling ripples and waves.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/SplashCursor-TS-CSS"
+    },
+    {
+      "name": "SplashCursor-TS-TW",
+      "type": "registry:component",
+      "description": "Liquid splash burst at cursor with curling ripples and waves.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/SplashCursor-TS-TW"
+    },
+    {
+      "name": "StarBorder-JS-CSS",
+      "type": "registry:component",
+      "description": "Animated star / sparkle border orbiting content with twinkle pulses.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/StarBorder-JS-CSS"
+    },
+    {
+      "name": "StarBorder-JS-TW",
+      "type": "registry:component",
+      "description": "Animated star / sparkle border orbiting content with twinkle pulses.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/StarBorder-JS-TW"
+    },
+    {
+      "name": "StarBorder-TS-CSS",
+      "type": "registry:component",
+      "description": "Animated star / sparkle border orbiting content with twinkle pulses.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/StarBorder-TS-CSS"
+    },
+    {
+      "name": "StarBorder-TS-TW",
+      "type": "registry:component",
+      "description": "Animated star / sparkle border orbiting content with twinkle pulses.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/StarBorder-TS-TW"
+    },
+    {
+      "name": "StickerPeel-JS-CSS",
+      "type": "registry:component",
+      "description": "Sticker corner lift + peel interaction using 3D transform and shadow depth.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/StickerPeel-JS-CSS"
+    },
+    {
+      "name": "StickerPeel-JS-TW",
+      "type": "registry:component",
+      "description": "Sticker corner lift + peel interaction using 3D transform and shadow depth.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/StickerPeel-JS-TW"
+    },
+    {
+      "name": "StickerPeel-TS-CSS",
+      "type": "registry:component",
+      "description": "Sticker corner lift + peel interaction using 3D transform and shadow depth.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/StickerPeel-TS-CSS"
+    },
+    {
+      "name": "StickerPeel-TS-TW",
+      "type": "registry:component",
+      "description": "Sticker corner lift + peel interaction using 3D transform and shadow depth.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/StickerPeel-TS-TW"
+    },
+    {
+      "name": "TargetCursor-JS-CSS",
+      "type": "registry:component",
+      "description": "A cursor follow animation with 4 corners that lock onto targets.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/TargetCursor-JS-CSS"
+    },
+    {
+      "name": "TargetCursor-JS-TW",
+      "type": "registry:component",
+      "description": "A cursor follow animation with 4 corners that lock onto targets.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/TargetCursor-JS-TW"
+    },
+    {
+      "name": "TargetCursor-TS-CSS",
+      "type": "registry:component",
+      "description": "A cursor follow animation with 4 corners that lock onto targets.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/TargetCursor-TS-CSS"
+    },
+    {
+      "name": "TargetCursor-TS-TW",
+      "type": "registry:component",
+      "description": "A cursor follow animation with 4 corners that lock onto targets.",
+      "registry": "@react-bits",
+      "addCommandArgument": "@react-bits/TargetCursor-TS-TW"
+    }
+  ]
+}
